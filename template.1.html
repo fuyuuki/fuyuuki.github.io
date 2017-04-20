@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- try themes from: https://startbootstrap.com/-->
+    <!--<link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!--<link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <link rel="stylesheet" type="text/css" href="theme3.css"> 
+    <!--<link rel="stylesheet" type="text/css" href="theme4.css">-->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="page.css">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+    <!-- use this style for testing and development purposes -->
+    <!--<style type="text/css">
+        .container {
+            border: 2px dotted green;
+        }
+        
+        .row {
+            border: 1px dotted red;
+        }
+        
+        .row [class*=' col-'] {
+            border: 2px dotted purple;
+        }
+        
+    </style>-->
+
+
+</head>
+
+<body>
+ <!--to disable sticking bar to screen, remove class: navbar-fixed-top. can change to fixed-bottom -->
+<nav class="navbar navbar-default navbar-fixed-top">
+<!--for a dark coloured navbar, use class="navbar-inverse". do not use if using themes over the page-->
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- hamburger button. do not touch! (data target for JS to read)-->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
+      <a class="navbar-brand" href="#">
+          <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome, must use correct size ~50x50px and use .svg) -->
+          <i class="fa fa-telegram"></i>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- THIS UL HANDLES OUR LINKS -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://facebook.com">facebook</a></li>
+        <li><a href="http://facebook.com">facebook2</a></li>
+        <!-- to make more links, make some <li> in here -->
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div class="container">
+
+        <div class="row">
+            <!--row 1: jumbotron-->
+
+            <div class="col-xs-12
+                        col-sm-12
+                        col-md-12
+                        col-lg-12">
+                <div class="jumbotron" style="background-image:url(https://s-media-cache-ak0.pinimg.com/originals/85/59/c7/8559c77c58fd067501c2ee4b747faae4.jpg); background-size:cover;background-position:center; background-repeat:no-repeat">
+                    <h1>Discover</h1>
+                    <p>the love of your life</p>
+                    <a href="https://stackup-codeforgood.github.io/" class="btn btn-primary btn-lg">Come find me!</a>
+                    <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>-->
+                </div>
+
+            </div>
+
+        </div> <!--end of first row-->
+
+        <div class="row"> <!--row 2: thumbnail-->
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4">
+                <div class="thumbnail ">
+                    <img class="img-responsive"
+                    src="http://static.boredpanda.com/blog/wp-content/uuuploads/cute-baby-animals-2/cute-baby-animals-2-2.jpg">
+                    <div class="caption">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis non sint et obcaecati architecto sequi, consequuntur amet ratione laboriosam, nemo inventore vero nulla asperiores, dolor odio repudiandae, labore doloribus dignissimos!</p>
+                    </div>
+                </div><!--end of thumbnail div          -->
+                
+            </div><!--end of col div          -->
+            
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4">
+                <div class="thumbnail">
+                    <img  class="img-responsive" src="http://www.slate.com/content/dam/slate/blogs/wild_things/2015/09/02/150902_WILD_CutePenguins.jpg.CROP.promo-xlarge2.jpg" >
+                    <div class="caption">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis non sint et obcaecati architecto sequi, consequuntur amet ratione laboriosam, nemo inventore vero nulla asperiores, dolor odio repudiandae, labore doloribus dignissimos!</p>
+                    </div>
+                </div><!--end of thumbnail div          -->
+            </div><!--end of col div          -->
+            
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="http://cdn.earthporm.com/wp-content/uploads/2015/04/cute-animals-hokkaido-ezo-japan-5.jpg" >
+                    <div class="caption">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis non sint et obcaecati architecto sequi, consequuntur amet ratione laboriosam, nemo inventore vero nulla asperiores, dolor odio repudiandae, labore doloribus dignissimos!</p>
+                    </div>
+                </div><!--end of thumbnail div          -->
+            </div><!--end of col div          -->
+        </div><!--end of row 2-->
+        
+        <div class="row"><!--row 3: Video-->
+            <div class="col-xs-12
+                        col-sm-12
+                        col-md-12
+                        col-lg-12">
+                <!-- 16:9 aspect ratio video-->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/D36JUfE1oYk"></iframe>
+                </div>
+            </div>
+        </div><!--end of row 3-->
+<hr>
+
+    <div class="row"><!--row 4: form-->
+        <!--col 1: form-->
+        <div class="col-xs-12 
+                    col-sm-6 
+                    col-md-6 
+                    col-lg-6">
+            <div class="panel panel-default ">
+                                            
+                <div class="panel-body" style="box-shadow:1px 1px 2px black">
+                    <form action="https://coderinyou-1332.appspot.com/submit" method="post">
+                        <legend>Sign up here!</legend>
+                        <div class="form-group">
+                        <!--form-group adds a margin -->
+                            <label for="name-id">Name:</label>
+                            <input id="name-id" class="form-control" type="text" name="NAME" placeholder="e.g. John Doe">
+                            <!--form-control makes it full width and gives it a slightly rounded view-->
+                        </div>
+                        <!--end of form group-->
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input id="email" class="form-control" type="email" name="EMAIL" placeholder="john.doe@g.com">
+                        </div>
+                            <div>
+                                <label>
+                                <input type="radio" name="gender" value="male"> Male
+                                </label>
+                            </div>
+                            <div>
+                                <!--put div to create 2 separate rows *cheat-->
+                                <label>
+                                <input type="radio" name="gender" value="female"> Female
+                                </label>
+                            </div>
+                            <input type="submit" class="btn btn-primary btn-block">
+                    </form>
+
+                </div><!--end of panel body-->
+            </div><!--end of panel-->
+        </div><!--end of col 1 div          -->
+        
+        <!--col 2: text description-->
+        <div class="col-xs-12 
+                    col-sm-6 
+                    col-md-6 
+                    col-lg-6
+                    text-center">
+        
+            <h1> Lorem</h1>
+            <hr>
+            <p></p>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias repellendus asperiores, consectetur earum recusandae quam dolorum beatae vitae dignissimos sunt magni non voluptas facilis quisquam nostrum hic totam corporis consequuntur?
+            </p>
+        </div><!--end of col 2 div          -->
+    </div><!--end of row 4-->
+
+    <div class="row"><!--row 5: contacts-->
+        <!--table-->
+        <div class="col-xs-12 
+                    col-sm-4 
+                    col-md-4 
+                    col-lg-4">
+            <h3 class="text-center">Visit Us!</h3>
+            <table class="table table-striped">
+                <tr>
+                    <th>&nbsp;&nbsp;Day</th>
+                    <th>&nbsp;&nbsp;Hours</th>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;Mon - Fri</td>
+                    <td>&nbsp;&nbsp;9am - 5pm</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;Sat - Sun</td>
+                    <td>&nbsp;&nbsp;10am - 2pm</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;PH</td>
+                    <td>&nbsp;&nbsp;Closed</td>
+                </tr>
+            </table>
+        </div>
+        <!--map-->
+        <div class="col-xs-12 
+                    col-sm-4 
+                    col-md-4 
+                    col-lg-4">
+            <div class="embed-responsive embed-responsive-4by3">
+                <!--repeat same as youtube iframe embed-->
+                    <iframe class="embed-responsive-item" src="https://goo.gl/AXgFUl">
+                    </iframe>
+            </div>
+        
+        </div>
+        <!--contact list-->
+        <div class="col-xs-12 
+                    col-sm-4 
+                    col-md-4 
+                    col-lg-4">
+            <h3 class="text-center">Contact Us!</h3>
+            <div class="list-group">
+                <a class="list-group-item" href="#"><i class="fa fa-phone fa-fw"></i>&nbsp;&nbsp;&nbsp; +65 1234 5678</a>
+                <a class="list-group-item" href="#"><i class="fa fa-envelope fa-fw"></i>&nbsp;&nbsp;&nbsp; email.me@here.com</a>
+                <a class="list-group-item" href="#"><i class="fa fa-home fa-fw"></i>&nbsp;&nbsp;&nbsp; Catch me if you can!</a>
+            </div>
+        
+        </div>
+    </div><!--end of row 5-->
+<hr>
+    <div class="row">
+        <div class="col-xs-12 text-center "><!--when only one col size is defined, it will apply to all sizes-->
+            <!--<div class="list-group">-->
+                <!--to make side-by-side, remove list-group and list-group-item in the div class and 'a' class respectively-->
+                <!--or alternatively, can use <ul class="list-inline", see below *effect is that the icons will be slightly further apart than without wrapping it with <li>>-->
+            <ul class="list-inline">
+                <li>
+                    <a href="#"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-linkedin-square fa-fw fa-2x"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-instagram fa-fw fa-2x"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-google fa-fw fa-2x"></i></a>
+                </li>
+            </ul>
+            <!--</div>-->
+        </div>
+    </div>
+<hr>
+
+    </div>
+    <!--end of container-->
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!--animation js: use WOW to activate when scrolling-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
